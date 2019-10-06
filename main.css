@@ -45,24 +45,26 @@ nav {
     width: 100%;
     top: 0px;
     Z-index: 10;
+    display: flex;
+    justify-content: space-between;
 }
 nav h2 {
-    height: 2.5rem;
+    height: 50px;
     padding: 5px 0px 5px 20px;
-    display: inline-flex;
     color: white;
     font-size: 30px;
-    flex-shrink: 2;
+    display: inline-flex;
+    flex: 1 2 300px;
 }
 nav ul {
     height: 40px;
     padding: 5px 20px 5px 0px;
     list-style-type: none;
     color: white;
-    float: right;
+    flex-shrink: 1;
 }
 nav li {
-    display: inline-block;
+    display: inline-flex;
     height: 40px;
 }
 nav li:hover {
@@ -127,6 +129,9 @@ nav li:hover {
     }
     #browserNav {
         display: none;
+    }
+    nav h2 {
+        font-size: 25px;
     }
 }
 
